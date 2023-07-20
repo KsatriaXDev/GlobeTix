@@ -10,9 +10,9 @@ export default function categories() {
     <>
       <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800">
         <div className="container flex flex-wrap items-center justify-between mx-auto my-2">
-          <a href="index.html" className="flex items-center">
+          <a href="" className="flex items-center">
             <div>
-              Globe<span className="font-bold text-blue-800">Tix</span>
+              <Link href="/index">Globe<span className="font-bold text-blue-800">Tix</span></Link>
             </div>
           </a>
           <div className="md:order-2">
@@ -51,7 +51,7 @@ export default function categories() {
 
     <Discount/>
 
-      {/* <div className="container px-4 mx-auto my-16 md:px-12">
+       <div className="container px-4 mx-auto my-16 md:px-12">
         <div id="controls-carousel" className="relative w-full" data-carousel="static">
           <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
             <div className="hidden duration-700 ease-in-out" data-carousel-item>
@@ -99,7 +99,7 @@ export default function categories() {
             </span>
           </button>
         </div>
-      </div> */}
+      </div> 
 
       <New/>
     </>
