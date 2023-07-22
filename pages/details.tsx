@@ -1,11 +1,17 @@
 import React from 'react'
+import ImageDetails from './components/molecules/ImageDetails'
+import Link from 'next/link';
 
 export default function Details() {
   return (
     <>
     <figcaption>
       <figure>
-        <h1><a href="index.html">Globe<span className="font-bold text-blue-800 ">Tix</span></a></h1>
+        <h1>
+          <Link href="/">Globe
+            <span className="font-bold text-blue-800 ">Tix</span>
+          </Link>
+        </h1>
         <div id="menu-bar" className="fa fa-bars"></div>
       </figure>
 
@@ -13,20 +19,7 @@ export default function Details() {
         <h1 className="heading_">Jakarta <span className="text-blue-800">"Monumen Nasional 'MONAS' "</span></h1>
 
         <div className="row">
-          <div className="image-container">
-            <div className="small-image">
-              <img src="/img/item/Monas1.jpg" alt="" className="featured-image-3" />
-              <img src="/img/item/Monas2.png" alt="" className="featured-image-3" />
-              <img src="/img/item/Monas3.jpeg" alt="" className="featured-image-3" />
-              <img src="/img/item/Monas4.png" alt="" className="featured-image-3" />
-              <img src="/img/item/Monas5.png" alt="" className="featured-image-3" />
-              <img src="/img/item/Monas6.png" alt="" className="featured-image-3" />
-            </div>
-            <div className="big-image">
-              <img src="/img/item/Monas1.jpg" alt="" className="big-image-3" />
-            </div>
-          </div>
-
+         <ImageDetails />
           <div className="content">
             <h3>Monas "Monumen Nasional"</h3>
             <p>Didirikan tahun 12 Juli 1975 oleh Soedarsono, Frederich Silaban dan Ir. Rooseno.</p>
@@ -36,8 +29,8 @@ export default function Details() {
               Rp15.000,00
               <span className="text-blue-800">Rp20.000,00</span>
             </div>
-            <a href="Checkout.html" className="add-cart">Checkout</a>
-            <a href="jawa.html" className="add-cart">Back</a>
+            <Link href="/checkout" className="add-cart">Checkout</Link>
+            <Link href="/detials" className="add-cart">Back</Link>
           </div>
         </div>
       </section>
