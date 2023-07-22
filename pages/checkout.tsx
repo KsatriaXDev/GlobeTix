@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function checkout() {
@@ -47,12 +48,12 @@ export default function checkout() {
               <textarea name="" placeholder="enter your message" id="message" cols={30} rows={10}></textarea>
             </div>
           </div>
-          <button type="submit" id="btn123">
+          <Link href="/success" type="submit" id="btn123">
             order now
-          </button>
+          </Link>
         </form>
         <h3 className="sub-heading">
-          <a href="index.html"> back </a>
+          <Link href="/details"> back </Link>
         </h3>
       </section>
     </>
