@@ -67,7 +67,7 @@ export default function Home() {
           </div>
         </div>
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <img className="w-full lg:w-3/4 lg:mt-8" src="img/HomeImage.JPG" alt="" />
+          <img className="w-full lg:w-3/4 lg:mt-8 rounded-2xl" src="img/HomeImage.JPG" alt="" />
         </div>
       </div>
 
