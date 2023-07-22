@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from "next/link";
-import Menu from "./menu"
+import Menu from "./Menu"
 export default function index() {
   return (
    <>

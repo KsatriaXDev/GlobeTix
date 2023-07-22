@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function success() {
@@ -12,15 +13,15 @@ export default function success() {
               <img src="img/success-illustration.svg" alt="" className="mb-10 w-4xl" />
                 <h2 className="mb-2 text-2xl font-bold text-center">Payment Success</h2>
                 <p className="mb-5 text-lg text-center text-gray-500">
-                  Ready to explore our high quality design?
+                  Waiting your payment approve
                 </p>
             </div>
-            <a
-              href="#"
+            <Link
+              href="/"
               className="px-8 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-full hover:bg-indigo-700 md:py-2 md:text-lg md:px-10 hover:shadow"
             >
               Explore Now
-            </a>
+            </Link>
           </div>
         </div>
       </div>

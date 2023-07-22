@@ -13,9 +13,11 @@ export default function CardTopDestination(props: CardTopDestination) {
     <>
       <div className="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
         <div className="overflow-hidden border border-gray-200 rounded-xl">
-          <div className="m-4 overflow-hidden rounded-xl">
-            <img alt="Placeholder" className="block w-full h-auto" src={`/img/item/${thumbnail}.jpg`} width={40} height={40}  />
-          </div>
+          <Link href='/details'>
+            <div className="m-4 overflow-hidden rounded-xl">
+              <img alt="Placeholder" className="block w-full h-auto" src={`/img/item/${thumbnail}.jpg`} width={40} height={40}  />
+            </div>
+          </Link>
           <header className="px-4 mb-4 leading-tight">
             <h1 className="text-lg">
               <Link className="font-semibold text-black no-underline hover:underline" href="/details">
