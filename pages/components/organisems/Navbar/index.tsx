@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from "next/link";
-
+import Menu from "./menu"
 export default function index() {
   return (
    <>
@@ -23,30 +23,9 @@ export default function index() {
           </div>
           <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
             <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-regular">   
-              <li>
-                <Link
-                  href="/top-destination"
-                  className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-indigo-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  Top Destination
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/discount"
-                  className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-indigo-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  Discount
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/new-destination"
-                  className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-indigo-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  New Destination
-                </Link>
-              </li>
+              <Menu title='Top Destination' href="/top-destination"/>
+              <Menu title='Discount' href="/Discount"/>
+              <Menu title='New Destination'  href="/new-destination" />
             </ul>
           </div>
         </div>
