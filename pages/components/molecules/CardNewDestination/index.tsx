@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 
 export interface CardNewDestination {
@@ -13,16 +14,16 @@ export default function CardNewDestination(props: CardNewDestination) {
     <>
       <div className="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
         <div className="overflow-hidden border border-gray-200 rounded-xl">
-          <a href="monas.html">
+          <Link href="/details">
             <div className="m-4 overflow-hidden rounded-xl">
               <img alt="Placeholder" className="block w-full h-auto" src={`/img/${thumbnail}.jpg`} width={40} height={40} />
             </div>
-          </a>
+          </Link>
           <header className="px-4 mb-4 leading-tight">
             <h1 className="text-lg">
-              <a className="font-semibold text-black no-underline hover:underline" href="monas.html">
+              <Link className="font-semibold text-black no-underline hover:underline" href="/details">
                 {title}
-              </a>
+              </Link>
             </h1>
             <span className="block text-sm font-light text-gray-500 no-underline">
               {category}

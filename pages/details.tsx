@@ -5,7 +5,7 @@ export default function Details() {
     <>
     <figcaption>
       <figure>
-        <h1><a href="index.html">Globe<span className="text-blue-800 font-bold ">Tix</span></a></h1>
+        <h1><a href="index.html">Globe<span className="font-bold text-blue-800 ">Tix</span></a></h1>
         <div id="menu-bar" className="fa fa-bars"></div>
       </figure>
 
@@ -29,13 +29,6 @@ export default function Details() {
 
           <div className="content">
             <h3>Monas "Monumen Nasional"</h3>
-            {/* <div className="stars">
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
-              <i className="fa fa-star"></i>
-            </div> */}
             <p>Didirikan tahun 12 Juli 1975 oleh Soedarsono, Frederich Silaban dan Ir. Rooseno.</p>
             <p>Menara ini terletak persis di Pusat Kota Jakarta. Tugu Monas merupakan tugu kebanggaan bangsa Indonesia, selain itu monas juga menjadi salah satu pusat tempat wisata dan pusat pendidikan yang menarik bagi warga Indonesa baik yang di Jakarta maupun di luar Jakarta. Tujuan pembangunan tugu monas adalah untuk mengenang dan mengabadikan kebesaran perjuangan Bangsa Indonesia yang dikenal dengan Revolusi 17 Agustus 1945, dan juga sebagai wahana untuk membangkitkan semangat patriotisme generasi sekarang dan akan datang.</p>
             <p>Monas mulai dibangun pada bulan Agustus 1959. Keseluruhan bangunan Monas dirancang oleh para arsitek Indonesia yaitu Soedarsono, Frederich Silaban dan Ir. Rooseno. Pada tanggal 17 Agustus 1961, Monas diresmikan oleh Presiden Soekarno. Dan mulai dibuka untuk umum sejak tanggal 12 Juli 1975.</p>
