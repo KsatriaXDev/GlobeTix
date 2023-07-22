@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function signin() {
@@ -38,18 +39,16 @@ export default function signin() {
                   >
                     Sign In
                   </button>
-                  <button
-                    type="button"
+                  <Link
+                    href="/signup"
                     className="inline-flex items-center justify-center w-full px-8 py-3 mt-2 text-base font-medium text-black bg-gray-200 border border-transparent rounded-full hover:bg-gray-300 md:py-2 md:text-lg md:px-10 hover:shadow"
                   >
                     Create New Account
-                  </button>
+                  </Link>
                 </div>
               </form>
             </div>
-            <div className="w-full mx-auto mt-20 sm:max-w-2xl">
-              <img src="img/brand-logo.svg" alt="" className="w-full px-10 md:px-0" />
-            </div>
+           
           </div>
         </div>
       </div>

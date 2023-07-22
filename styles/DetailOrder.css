@@ -1,24 +1,16 @@
 
+
+
 /* Details order starts */
 
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    /* text-transform: uppercase; */
-    transition: all .2s linear;
-}
-html{
+/* html{
     font-size: 60%;
     scroll-padding-top: 6rem;
     scroll-behavior: smooth;
     background: white;
-}
-header{
+} */
+figure{
     position: fixed;
     top: 0;
     left: 0;
@@ -30,34 +22,36 @@ header{
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    font-size: 2rem;
-}
-header .logo{
-    font-size: 2rem;
-    color: black;
-    font-weight: 500;
+    font-size: 1.2rem;
 }
 
-header .logo span{
+figure .h1{
+    font-size: 2rem;
     color: black;
+    font-weight: bolder;
+}
+
+figure .h1 span{
+    color: blue;
     text-decoration:overline;
-    text-decoration-color:white;
+    text-decoration-color:blue;
+    
 }
 
-header .navbar a{
+figure .navbar a{
     font-size: 1.5rem;
     color: black;
     margin: 0 2rem;
 }
 
                                     /* HOVER NAVBAR 768PX START */
-header .navbar a:hover{
+figure .navbar a:hover{
     /* color: burlywood; */
 }
 
-.heading{
+.heading_{
     text-align: center;
-    font-size: 3rem;
+    font-size: 1.5rem;
     padding: 10px;
     font-weight: bolder;
     text-transform: uppercase;
@@ -100,19 +94,19 @@ header .icons a:hover{
     margin-top: 30px;    
 }
 .featured .row .content{
-    flex: 1 1 40rem;
+    flex: 1 1 20rem;
 }
 .featured .row .image-container{
     display: flex;
     gap: 1.5rem;
     align-items: center;
-    flex: 1 1 50rem;
+    flex: 1 1 40rem;
 }
 .featured .row .image-container .small-image{
     width: 20%;
 }
 .featured .row .image-container .big-image{
-    width: 80%;
+    width: 70%;
     padding: 1rem;
 }
 .featured .row .image-container .small-image img{
@@ -131,7 +125,7 @@ header .icons a:hover{
     transform: scale(1.05);
 }
 .featured .row .content h3{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: #000;
 }
 .featured .row .content .stars i{
@@ -140,29 +134,32 @@ header .icons a:hover{
     padding: .5rem 0;
 }
 .featured .row .content p{
-    font-size: 1.5rem;
+    font-size: .8rem;
     color: #666;
     padding: 1rem 0;
 }
 .featured .row .content .price{
-    font-size: 2.5rem;
+    margin-top: 50px;
+    font-size: 1.3rem;
     color: #000;
     font-weight: bolder;
 }
 .featured .row .content .price span{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     /* color: burlywood; */
     text-decoration: line-through;
+    margin-left: 5px;
 }
                                         /* DETAILS LEBRON 9 REGAL PINK END  */
 
 .add-cart{
     display: inline-block;
     margin-top: 1rem;
+    margin-right: 5px;
     border-radius: .5rem;
     border: .2rem solid #000;
     font-weight: bolder;
-    font-size: 1.7rem;
+    font-size: 1rem;
     color: #000;
     cursor: pointer;
     background: rgb(30 64 175);
