@@ -8,7 +8,7 @@ export default function index() {
         <div className="container flex flex-wrap items-center justify-between mx-auto my-2">
           <Link href="/" className="flex items-center">
             <div>
-              <div>
+              <div className='text-xl'>
                 Globe<span className="font-bold text-blue-800">Tix</span>
               </div>
             </div>
@@ -17,7 +17,7 @@ export default function index() {
             <Link href="/signin" className="px-8 py-3 mt-2 mr-2 text-base font-medium text-black bg-gray-200 border border-transparent rounded-full hover:bg-gray-300 md:py-2 md:text-sm md:px-8 hover:shadow">
               Sign In
             </Link>
-            <Link href="/signup" className="px-8 py-3 text-base font-medium text-white border border-transparent rounded-full bg-navy hover:bg-navy md:py-2 md:text-sm md:px-8 hover:shadow">
+            <Link href="/signup" className="px-8 py-3 text-base font-medium text-white border border-transparent rounded-full bg-blue-700 hover:bg-navy md:py-2 md:text-sm md:px-8 hover:shadow">
               Sign Up
             </Link>
           </div>

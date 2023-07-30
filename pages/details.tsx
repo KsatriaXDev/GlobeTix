@@ -1,4 +1,6 @@
 import React from 'react'
+import Link from 'next/link';
+
 
 export default function Details() {
   return (
@@ -43,7 +45,10 @@ export default function Details() {
               Rp15.000,00
               <span className="text-blue-800">Rp20.000,00</span>
             </div>
-            <a href="Checkout.html" className="add-cart">Checkout</a>
+            
+            <Link href="checkout" className="add-cart">Checkout</Link>
+
+            {/* <a href="Checkout.html" className="add-cart">Checkout</a> */}
             <a href="jawa.html" className="add-cart">Back</a>
           </div>
         </div>

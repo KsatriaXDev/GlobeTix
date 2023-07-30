@@ -9,14 +9,18 @@ export default function Home() {
     <>
       <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 dark:text-white dark:">
         <div className="container flex flex-wrap items-center justify-between mx-auto my-2">
-          <a href="index.html" className="flex items-center">
-            <div className="dark:text-white">Globe<span className="font-bold text-blue-800">Tix</span></div>
-          </a>
+        <Link href="/" className="flex items-center">
+            <div>
+              <div className='pl-10 text-xl'>
+                Globe<span className="font-bold text-blue-800">Tix</span>
+              </div>
+            </div>
+          </Link>
           <div className="md:order-2 dark:text-white dark:bg-gray-900">
             <Link href="/signin" className="px-8 py-3 mt-2 mr-2 text-base font-medium text-black bg-gray-200 border border-transparent rounded-full hover:bg-gray-300 md:py-2 md:text-sm md:px-8 hover:shadow">
               Sign In
             </Link>
-            <a href="/signup" className="px-8 py-3 text-base font-medium text-white border border-transparent rounded-full bg-navy hover:bg-navy md:py-2 md:text-sm md:px-8 hover:shadow">
+            <a href="/signup" className="px-8 py-3 text-base font-medium text-white border border-transparent rounded-full bg-blue-700 hover:bg-navy md:py-2 md:text-sm md:px-8 hover:shadow">
               Sign Up
             </a>
           </div>
