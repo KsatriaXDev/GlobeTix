@@ -5,6 +5,20 @@ import Link from 'next/link';
 export default function signup() {
   return (
     <>
+
+    
+      <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 dark:text-white dark:">
+        <div className="container flex flex-wrap items-center justify-between mx-auto my-2">
+
+            <Link href="/" className="dark:text-white text-xl">
+              Globe
+              <span className="font-bold text-blue-800">Tix</span>
+            </Link>
+
+        </div>
+       </nav>  
+
+
       <div className="relative overflow-hidden bg-white">
         <div className="mx-auto">
           <div
@@ -54,7 +68,7 @@ export default function signup() {
                     <div className="mt-6">
                       <button
                         type="button"
-                        className="inline-flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-full hover:bg-indigo-700 md:py-2 md:text-lg md:px-10 hover:shadow"
+                        className="inline-flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-blue-700 border border-transparent rounded-full hover:bg-blue-800 md:py-2 md:text-lg md:px-10 hover:shadow"
                       >
                         Continue Sign Up
                       </button>
