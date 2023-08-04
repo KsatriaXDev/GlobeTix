@@ -1,5 +1,6 @@
 import React from 'react'
 import CardTopDestination from '@/pages/components/molecules/CardTopDestination'
+import Link from 'next/link'
 
 export default function TopDestination() {
   return (
@@ -8,7 +9,9 @@ export default function TopDestination() {
         <h2 className="mb-4 text-xl font-medium md:mb-0 md:text-lg">Top Destination</h2>
         <div className="flex flex-wrap -mx-1 lg:-mx-4 review-slider">
           <CardTopDestination title="Candi Borobudur, Daerah Istimewa Yogyakarta" thumbnail="Borobudur3" category="Jawa timur" />
+          {/* <Link href="/details"> */}
           <CardTopDestination title="Monas, DKI Jakarta" thumbnail="monas1" category="Jakarta" />
+          {/* </Link> */}
           <CardTopDestination title="Candi Borobudur, Daerah Istimewa Yogyakarta" thumbnail="Borobudur3" category="Jawa timur" />
           <CardTopDestination title="Taman Safari, Jakarta" thumbnail="Tamansafari4" category="Jakarta" />
         </div>

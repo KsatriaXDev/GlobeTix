@@ -16,9 +16,10 @@ export default function Home() {
             <Link href="/signin" className="px-8 py-3 mt-2 mr-2 text-base font-medium text-black bg-gray-200 border border-transparent rounded-full hover:bg-gray-300 md:py-2 md:text-sm md:px-8 hover:shadow">
               Sign In
             </Link>
-            <a href="/signup" className="px-8 py-3 text-base font-medium text-white border border-transparent rounded-full bg-blue-700 hover:bg-blue-800 md:py-2 md:text-sm md:px-8 hover:shadow">
+            
+            <Link href="/signup" className="px-8 py-3 text-base font-medium text-white border border-transparent rounded-full bg-blue-700 hover:bg-blue-800 md:py-2 md:text-sm md:px-8 hover:shadow">
               Sign Up
-            </a>
+              </Link>
           </div>
         </div>
       </nav>
