@@ -41,7 +41,7 @@ export default function index() {
           </div>
         </div>
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <img className="w-full lg:w-3/4 lg:mt-8 rounded-xl" src="img/item/jawahero.JPG" alt="" />
+          <img className="w-full lg:w-3/4 lg:mt-8 rounded-xl max-w-sm" src="img/item/jawahero.JPG" alt="" />
         </div>
       </div>
     </>

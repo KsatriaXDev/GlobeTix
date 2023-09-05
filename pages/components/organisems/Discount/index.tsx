@@ -1,3 +1,4 @@
+
 // import React from 'react'
 // import CardDiscount from '@/pages/components/molecules/CardDiscount'
 // import Link from 'next/link'
@@ -28,9 +29,10 @@
 
 
 import React from 'react'
-import CardDiscount, { CardDiscount1 } from '@/pages/components/molecules/CardDiscount'
+import CardDiscount from '@/pages/components/molecules/CardDiscount'
 import Link from 'next/link'
 
+const link = <Link href="/"></Link>
 
 
 export default function index() {
@@ -45,8 +47,8 @@ export default function index() {
 
         <div className="flex flex-wrap -mx-1 lg:-mx-4">
 
-        <CardDiscount title1="Candi Borobudur, Daerah Istimewa Yogyakarta" thumbnail1="Borobudur3" category1="Jawa Timur"   />
-        <CardDiscount1 title2="Monas, DKI Jakarta" thumbnail2="monas1" category2="Jakarta"  />
+        <CardDiscount title1="Candi Borobudur, Daerah Istimewa Yogyakarta" thumbnail1="Borobudur3" category1="Jawa Timur"  />
+        <CardDiscount title1="Monas, DKI Jakarta" thumbnail1="monas1" category1="Jakarta" />
 
 
 
