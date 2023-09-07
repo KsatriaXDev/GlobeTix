@@ -9,8 +9,8 @@ type Props = {}
 
 const Hero = (props: Props) => {
   return (
-    <div className='container flex flex-col lg:flex-row justify-between px-20 mt-10'>
-        <div className='flex flex-col justify-center h-full items-center gap-10 mt-40'>
+    <div className='container flex flex-col lg:flex-row justify-center gap-20 mt-40'>
+        <div className='flex flex-col justify-center h-full items-center gap-5 mt-40'>
             <HomeText />
             <Dropdown />
         </div>
