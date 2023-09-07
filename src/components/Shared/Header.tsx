@@ -12,8 +12,32 @@ const Navbar = (props: Props) => {
           <Link href="/" className="flex items-center h-full">
           <div className="dark:text-white text-xl">Globe<span className="font-bold text-blue-800">Tix</span></div>
           </Link>
+          {userId && (
+            <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
+            <div className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-regular">
+              <Link href="">
+              <span>Top Destination</span>
+              </Link>   
+              <Link href="">
+              <span>Discounted Destination</span>
+              </Link>   
+              <Link href="">
+              <span>Newly Added Destination</span>
+              </Link>   
+            </div>
+          </div>
+          )}
           <div className="md:order-2 dark:text-white dark:bg-gray-900">
-            {!userId && (
+            {userId ? (
+              <div className='flex gap-10 items-center text-sm text-gray-600'>
+                <Link href="/order">
+                  <span className='uppercase'>Order</span>
+                </Link>
+                <div className='ml-auto'>
+                  <UserButton afterSignOutUrl='/'/>
+                </div>
+              </div>
+            ) : (
               <>
                 <Link href="/sign-in" className="px-8 py-3 mt-2 mr-2 text-base font-medium text-black bg-gray-200 border border-transparent rounded-full hover:bg-gray-300 md:py-2 md:text-sm md:px-8 hover:shadow">
                   Sign In
@@ -22,18 +46,8 @@ const Navbar = (props: Props) => {
                   Sign Up
                 </Link>
               </>
-            )}
-            {userId && (
-              <div className='flex gap-5 items-center text-xs text-gray-600'>
-                <Link href="/order">
-                  <span className='uppercase'>Ticket Order</span>
-                </Link>
-                <div className='ml-auto'>
-                  <UserButton afterSignOutUrl='/'/>
-                </div>
-              </div>
-            )}
-            
+            )
+            }
           </div>
         </div>
       </nav>
