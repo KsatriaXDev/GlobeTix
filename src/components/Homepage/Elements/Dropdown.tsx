@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link';
 import React, { useState } from 'react'
 
 const Dropdown = () => {
@@ -27,31 +28,19 @@ const Dropdown = () => {
                     <div className="origin-top-right absolute mt-2 w-40 rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                         <ul role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                             <li>
-                                <a
-                                    href="#"
-                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                    onClick={closeDropdown}
-                                >
+                                <Link href="/jakarta" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
                                     Jakarta
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
-                                    href="#"
-                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                    onClick={closeDropdown}
-                                >
-                                    East Java
-                                </a>
-                            </li>
+                                <Link href="/bali" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
+                                        Bali
+                                    </Link>
+                                </li>
                             <li>
-                                <a
-                                    href="#"
-                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                    onClick={closeDropdown}
-                                >
-                                    Bali
-                                </a>
+                                <Link href="/east-java" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
+                                        East Java
+                                </Link>
                             </li>
                         </ul>
                     </div>
