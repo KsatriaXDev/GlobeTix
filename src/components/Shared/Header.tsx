@@ -23,9 +23,17 @@ const Navbar = (props: Props) => {
                 </Link>
               </>
             )}
-            <div className='ml-auto'>
-              <UserButton afterSignOutUrl='/'/>
-            </div>
+            {userId && (
+              <div className='flex gap-5 items-center text-xs text-gray-600'>
+                <Link href="/order">
+                  <span className='uppercase'>Ticket Order</span>
+                </Link>
+                <div className='ml-auto'>
+                  <UserButton afterSignOutUrl='/'/>
+                </div>
+              </div>
+            )}
+            
           </div>
         </div>
       </nav>

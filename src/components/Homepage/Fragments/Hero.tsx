@@ -15,7 +15,7 @@ const Hero = (props: Props) => {
             <Dropdown />
         </div>
         <div className='flex justify-center items-center h-full'>
-            <Image className="w-[400px] h-[500px] rounded-lg" src={HomeImg} alt="home-image" />
+            <Image className="w-[600px] h-[700px] rounded-lg" src={HomeImg} alt="home-image" />
         </div>
     </div>
   )
