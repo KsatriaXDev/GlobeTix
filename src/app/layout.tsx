@@ -21,10 +21,8 @@ export default function RootLayout({
       <html lang="en">
         <body className={inter.className}>
           <Header />
-          <main className='flex justify-center items-start'>
-              <div className='mt-20 overflow-x-hidden'>
-                {children}
-              </div>
+          <main className='pt-20 overflow-x-hidden'>
+            {children}
           </main>
         </body>
       </html>
