@@ -1,6 +1,6 @@
 import FooterWithSocialMediaIcons from "@/components/Homepage/Fragments/Footer";
 import Hero from "@/components/Homepage/Fragments/Hero";
-import Header from '@/components/Shared/Header'
+import Header from '@/components/Shared/Fragments/Header'
 import FancyTestimonialsSlider from "@/components/Homepage/Elements/Testimonial";
 import img1 from "../../../public/images/Borobudur1.jpeg"
 import img2 from "../../../public/images/Borobudur2.jpeg"

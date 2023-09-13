@@ -4,7 +4,9 @@ type Props = {}
 
 const page = (props: Props) => {
   return (
-    <div>Detail page</div>
+    <div>page 1
+        <a href="/bali/booking">booking</a>
+    </div>
   )
 }
 

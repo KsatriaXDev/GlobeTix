@@ -1,4 +1,4 @@
-import AuthText from "@/components/Shared/AuthText"
+import AuthText from "@/components/Shared/Fragments/AuthText"
 
 export default function AuthLayout({
     children

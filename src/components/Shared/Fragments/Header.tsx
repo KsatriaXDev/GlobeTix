@@ -11,7 +11,7 @@ type Props = {
 const Navbar = ({top, discount, newly}: Props) => {
   const { userId } = auth();
   return (
-    <nav className="fixed top-0 w-full bg-white border-gray-200 px-2 sm:px-4 py-2.5 shadow-xl">
+    <nav className="fixed top-0 w-full bg-white border-gray-200 px-2 sm:px-4 py-2.5">
         <div className="container flex flex-wrap items-center justify-between mx-auto my-2">
           <Link href="/" className="flex items-center h-full">
           <div className="dark:text-white text-xl">Globe<span className="font-bold text-blue-800">Tix</span></div>
@@ -19,13 +19,13 @@ const Navbar = ({top, discount, newly}: Props) => {
           {userId && (
             <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
             <div className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-regular">
-              <Link href="">
+              <Link href="#top">
               <span>{top}</span>
               </Link>   
-              <Link href="">
+              <Link href="#discount">
               <span>{discount}</span>
               </Link>   
-              <Link href="">
+              <Link href="#newly">
               <span>{newly}</span>
               </Link>   
             </div>

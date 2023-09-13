@@ -28,7 +28,7 @@ const Dropdown = () => {
                     <div className="origin-top-right absolute mt-2 w-40 rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                         <ul role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                             <li>
-                                <Link href="/jakarta" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
+                                <Link href="/java" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
                                     Java Island
                                 </Link>
                             </li>
