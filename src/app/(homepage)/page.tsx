@@ -1,6 +1,6 @@
-"use client"
 import FooterWithSocialMediaIcons from "@/components/Homepage/Fragments/Footer";
 import Hero from "@/components/Homepage/Fragments/Hero";
+import Header from '@/components/Shared/Header'
 import FancyTestimonialsSlider from "@/components/Homepage/Elements/Testimonial";
 import img1 from "../../../public/images/Borobudur1.jpeg"
 import img2 from "../../../public/images/Borobudur2.jpeg"
@@ -29,6 +29,8 @@ export default function Home() {
   ]
 
   return (
+    <>
+    <Header />
     <div className="flex flex-col justify-between items-center gap-60 w-screen min-h-screen overflow-x-hidden">
       <Hero />
       <div className="flex flex-col justify-center items-center gap-5 text-lg ">
@@ -37,5 +39,7 @@ export default function Home() {
       </div>
       <FooterWithSocialMediaIcons />
     </div>
+    </>
+    
   )
 }

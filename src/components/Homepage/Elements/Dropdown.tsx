@@ -29,7 +29,7 @@ const Dropdown = () => {
                         <ul role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                             <li>
                                 <Link href="/jakarta" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
-                                    Jakarta
+                                    Java Island
                                 </Link>
                             </li>
                             <li>
@@ -37,11 +37,6 @@ const Dropdown = () => {
                                         Bali
                                     </Link>
                                 </li>
-                            <li>
-                                <Link href="/east-java" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onClick={closeDropdown}>
-                                        East Java
-                                </Link>
-                            </li>
                         </ul>
                     </div>
                 )}

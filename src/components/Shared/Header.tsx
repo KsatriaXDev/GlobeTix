@@ -2,9 +2,13 @@ import Link from 'next/link'
 import React from 'react'
 import { auth, UserButton } from '@clerk/nextjs'
 
-type Props = {}
+type Props = {
+  top?: string;
+  discount?: string;
+  newly?: string;
+}
 
-const Navbar = (props: Props) => {
+const Navbar = ({top, discount, newly}: Props) => {
   const { userId } = auth();
   return (
     <nav className="fixed top-0 w-full bg-white border-gray-200 px-2 sm:px-4 py-2.5 shadow-xl">
@@ -16,13 +20,13 @@ const Navbar = (props: Props) => {
             <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
             <div className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-regular">
               <Link href="">
-              <span>Top Destination</span>
+              <span>{top}</span>
               </Link>   
               <Link href="">
-              <span>Discounted Destination</span>
+              <span>{discount}</span>
               </Link>   
               <Link href="">
-              <span>Newly Added Destination</span>
+              <span>{newly}</span>
               </Link>   
             </div>
           </div>
