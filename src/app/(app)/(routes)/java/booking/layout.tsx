@@ -1,6 +1,6 @@
 import Header from '@/components/Shared/Fragments/Header'
 
-export default function DetailLayout({
+export default function BookingLayout({
     children
 } : {
     children: React.ReactNode
