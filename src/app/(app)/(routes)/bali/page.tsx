@@ -8,7 +8,7 @@ const page = (props: Props) => {
   return (
     <div className='w-full min-h-screen'>
         <BaliHero />
-        <TopDestination />
+        <TopDestination/>
     </div>
   )
 }
