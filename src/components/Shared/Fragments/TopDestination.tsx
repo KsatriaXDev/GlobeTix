@@ -1,17 +1,13 @@
-import React from 'react'
+"use client"
+import React, { useContext } from 'react'
+
+import DestinationCard from '../Elements/DestinationCard'
 
 type Props = {}
 
 const TopDestination = (props: Props) => {
   return (
     <div>
-      <h4>Top Destination</h4>
-      <div>
-        
-      </div>
-      <div></div>
-      <div></div>
-      <div></div>
     </div>
   )
 }
