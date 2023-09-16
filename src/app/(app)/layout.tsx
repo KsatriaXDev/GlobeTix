@@ -1,4 +1,5 @@
 import Header from '@/components/Shared/Fragments/Header'
+import BaliProvider from '@/context/BaliContext'
 
 export default function AppLayout({
     children
@@ -8,7 +9,10 @@ export default function AppLayout({
     return (
         <div>
             <Header top="Top Destination" discount="Discounted Destination" newly="Newly Added Destination"/>
-            {children}
+            <BaliProvider>
+                {children}
+            </BaliProvider>
+            
         </div>
     )
 }
