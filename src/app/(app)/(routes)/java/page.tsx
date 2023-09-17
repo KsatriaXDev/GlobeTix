@@ -1,10 +1,18 @@
-import React from 'react'
+"use client"
+import JavaHero from '@/components/Java/Fragments/JavaHero'
+import React, { useEffect, useState } from 'react'
+import DestinationCard from '@/components/Shared/Elements/DestinationCard'
+import JavaContent from '@/components/Java/Fragments/JavaContent'
 
-type Props = {}
+const page = () => {
 
-const page = (props: Props) => {
   return (
-    <div>page</div>
+    <div>
+      <JavaHero />
+      <JavaContent />
+    </div>
+      
+    
   )
 }
 
