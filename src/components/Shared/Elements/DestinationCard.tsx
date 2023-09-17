@@ -14,7 +14,7 @@ const DestinationCard = ({destination}:any) => {
         <div className="overflow-hidden border border-gray-200 rounded-xl">
           <Link href={link}>
             <div className="m-4 overflow-hidden rounded-xl">
-              <img alt="Placeholder" className="block w-full h-auto" src={`/img/item/${thumbnail}.jpg`} width={40} height={40}  />
+              <img alt={title} className="block h-[450px] w-[400px]" src={thumbnail}/>
             </div>
           </Link>
           <header className="px-4 mb-4 leading-tight">
