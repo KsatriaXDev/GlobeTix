@@ -18,7 +18,7 @@ const Dropdown = () => {
       <div className="relative inline-block">
         <button
           type="button"
-          className="px-4 py-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm inline-flex items-center"
+          className="px-6 py-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full inline-flex items-center"
           onClick={toggleDropdown}
         >
           Choose Now &gt;
@@ -30,7 +30,7 @@ const Dropdown = () => {
               <li>
                 <Link
                   href="/java"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  className="block px-4 py-2 font-medium text-gray-700 hover:bg-gray-200"
                   onClick={closeDropdown}
                 >
                   Java Island
@@ -39,7 +39,7 @@ const Dropdown = () => {
               <li>
                 <Link
                   href="/bali"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  className="block px-4 py-2 font-medium text-gray-700 hover:bg-gray-200"
                   onClick={closeDropdown}
                 >
                   Bali

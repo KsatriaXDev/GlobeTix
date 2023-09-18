@@ -35,9 +35,9 @@ export default function FancyTestimonialsSlider({testimonials}: {testimonials: T
   }, []);
 
   return (
-    <div className="w-full max-w-3xl mx-auto text-center">
+    <div className="w-full max-w-7xl mx-auto text-center">
       <div className="relative h-32">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[480px] h-[480px] pointer-events-none before:absolute before:inset-0 before:bg-gradient-to-b before:from-indigo-500/25 before:via-indigo-500/5 before:via-25% before:to-indigo-500/0 before:to-75% before:rounded-full before:-z-10">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[480px] h-[480px] pointer-events-none before:absolute before:inset-0 before:bg-gradient-to-b before:from-blue-500/25 before:via-blue-500/5 before:via-25% before:to-blue-500/0 before:to-75% before:rounded-full before:-z-10">
           <div className="h-32 [mask-image:_linear-gradient(0deg,transparent,theme(colors.white)_20%,theme(colors.white))]">
             {testimonials.map((testimonial, index) => (
               <Transition
@@ -90,10 +90,10 @@ export default function FancyTestimonialsSlider({testimonials}: {testimonials: T
         {testimonials.map((testimonial, index) => (
           <button
             key={index}
-            className={`inline-flex justify-center whitespace-nowrap rounded-full px-3 py-1.5 m-1.5 text-xs shadow-sm focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 ${
+            className={`inline-flex justify-center whitespace-nowrap rounded-full px-3 py-1.5 m-1.5 text-xs shadow-sm focus-visible:outline-none focus-visible:ring focus-visible:ring-blue-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 ${
               active === index
-                ? "bg-indigo-500 text-white shadow-indigo-950/10"
-                : "bg-white hover:bg-indigo-100 text-slate-900"
+                ? "bg-blue-500 text-white shadow-blue-950/10"
+                : "bg-white hover:bg-blue-100 text-slate-900"
             }`}
             onClick={() => {
               setActive(index);
@@ -101,7 +101,7 @@ export default function FancyTestimonialsSlider({testimonials}: {testimonials: T
             }}
           >
             <span>{testimonial.name}</span>{" "}
-            <span className={`${active === index ? "text-indigo-200" : "text-slate-300"}`}>-</span>{" "}
+            <span className={`${active === index ? "text-blue-200" : "text-slate-300"}`}>-</span>{" "}
             <span>{testimonial.role}</span>
           </button>
         ))}

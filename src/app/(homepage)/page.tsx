@@ -34,10 +34,10 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="flex flex-col justify-between items-center gap-60 w-screen min-h-screen overflow-x-hidden">
+      <div className="flex flex-col justify-between items-center gap-40 w-screen min-h-screen overflow-x-hidden">
         <Hero />
-        <div className="flex flex-col justify-center items-center gap-5 text-lg ">
-          <p>Here is some of our customer experience:</p>
+        <div className="flex flex-col justify-center items-center gap-5 text-lg">
+          <p className="text-xl font-semibold py-14">Here is some of our customer experience:</p>
           <FancyTestimonialsSlider testimonials={testimonials} />
         </div>
         <FooterWithSocialMediaIcons />
