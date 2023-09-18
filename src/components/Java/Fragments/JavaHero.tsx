@@ -1,13 +1,13 @@
 import React from "react";
-import HeroText from "../Elements/HeroText";
 import HeroImage from "../Elements/HeroImage";
+import AppHeroText from "@/components/Shared/Fragments/AppHeroText";
 
 type Props = {};
 
 const JavaHero = (props: Props) => {
   return (
-    <div className="flex justify-center items-center gap-40 h-full w-full mt-20">
-      <HeroText />
+    <div className="flex justify-center items-center h-full w-full mt-40">
+      <AppHeroText destination="Java Island" />
       <HeroImage />
     </div>
   );

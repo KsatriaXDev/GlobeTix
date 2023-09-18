@@ -1,19 +1,20 @@
-import React from "react";
+import React from 'react'
 
-type Props = {};
+type Props = {
+    destination: string;
+}
 
-const HeroText = (props: Props) => {
+const AppHeroText = ({destination}: Props) => {
   return (
-    <>
-      <div className="z-10 px-5 pb-8 bg-white xl:pl-20 lg:pl-16 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+    <div className="z-10 px-5 pb-8 bg-white xl:pl-20 lg:pl-16 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
         <main className="mx-auto mt-10 max-w-7xl sm:mt-12 md:mt-16 lg:mt-20 xl:mt-36">
           <div className="sm:text-center lg:text-left">
             <h1 className="text-3xl font-bold leading-normal tracking-tight text-gray-900 sm:text-4xl md:text-5xl">
               <span className="block lg:mb-2">Welcome</span>
-              <span className="block">To Java Island</span>
+              <span className="block">To {destination}</span>
             </h1>
             <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-              Choose your destination in Java Island
+              Choose your destination in {destination}
               <span className="block lg:mb-1"></span> of ready-to-use design projects.
             </p>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
@@ -50,8 +51,7 @@ const HeroText = (props: Props) => {
           </div>
         </main>
       </div>
-    </>
-  );
-};
+  )
+}
 
-export default HeroText;
+export default AppHeroText
