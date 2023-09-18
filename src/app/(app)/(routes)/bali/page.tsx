@@ -1,17 +1,16 @@
-"use client"
-import BaliContent from '@/components/Bali/Fragments/BaliContent'
-import BaliHero from '@/components/Bali/Fragments/BaliHero'
+"use client";
+import BaliContent from "@/components/Bali/Fragments/BaliContent";
+import BaliHero from "@/components/Bali/Fragments/BaliHero";
 
-type Props = {}
+type Props = {};
 
 const page = (props: Props) => {
-
   return (
-    <div className='w-full min-h-screen'>
-        <BaliHero />
-        <BaliContent />
+    <div className="w-full min-h-screen">
+      <BaliHero />
+      <BaliContent />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

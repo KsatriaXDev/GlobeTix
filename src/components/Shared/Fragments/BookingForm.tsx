@@ -1,11 +1,9 @@
-import React from 'react'
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 const BookingForm = (props: Props) => {
-  return (
-    <div>BookingForm</div>
-  )
-}
+  return <div>BookingForm</div>;
+};
 
-export default BookingForm
+export default BookingForm;
