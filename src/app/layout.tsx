@@ -15,7 +15,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
     <ClerkProvider>
       <html lang="en">
         <body className={inter.className}>
-          <main className="pt-20 overflow-x-hidden">{children}</main>
+          <main className="-20 overflow-x-hidden">{children}</main>
         </body>
       </html>
     </ClerkProvider>
