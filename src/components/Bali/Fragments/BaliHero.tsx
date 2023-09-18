@@ -1,8 +1,8 @@
-import React from 'react'
-import Image from 'next/image'
-import { Bali } from '../../../../public'
+import React from "react";
+import Image from "next/image";
+import {JavaHero} from "../../../../public";
 
-type Props = {}
+type Props = {};
 
 const BaliHero = (props: Props) => {
   return (
@@ -22,13 +22,28 @@ const BaliHero = (props: Props) => {
                 </p>
 
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                  <label v-for="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">
+                  <label
+                    v-for="default-search"
+                    className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+                  >
                     Search
                   </label>
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                      <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                      <svg
+                        className="w-4 h-4 text-gray-500 dark:text-gray-400"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                        />
                       </svg>
                     </div>
                     <input
@@ -45,11 +60,11 @@ const BaliHero = (props: Props) => {
           </div>
         </div>
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <Image className="w-full lg:w-3/4 lg:mt-8 rounded-xl max-w-sm" src={Bali} alt='Bali'/>
+          <Image className="w-full lg:w-3/4 lg:mt-8 rounded-xl max-w-sm" src={JavaHero} alt="Bali" />
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default BaliHero
+export default BaliHero;

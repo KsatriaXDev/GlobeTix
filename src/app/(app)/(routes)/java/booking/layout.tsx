@@ -1,14 +1,10 @@
-import Header from '@/components/Shared/Fragments/Header'
+import Header from "@/components/Shared/Fragments/Header";
 
-export default function BookingLayout({
-    children
-} : {
-    children: React.ReactNode
-}) {
-    return (
-        <div>
-            <Header/>
-            {children}
-        </div>
-    )
+export default function BookingLayout({children}: {children: React.ReactNode}) {
+  return (
+    <div>
+      <Header />
+      {children}
+    </div>
+  );
 }
