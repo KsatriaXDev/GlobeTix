@@ -1,7 +1,6 @@
 'use client';
 import DestinationDetail from '@/components/Detail/Fragments/DestinationDetail';
 import DestinationTitle from '@/components/Detail/Fragments/DestinationTitle';
-import { Carousel } from 'flowbite-react';
 import React from 'react'
 import {useMonasContext} from "@/context/MonasContext"
 import DestinationCarousel from '@/components/Detail/Fragments/DestinationCarousel';

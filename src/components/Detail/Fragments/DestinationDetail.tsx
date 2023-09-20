@@ -7,12 +7,13 @@ detail: any;
 }
 
 const DestinationDetail = ({detail}: Props) => {
-const {title, history, explanation, price} = detail
+const {title, history, p1, p2, price} = detail
   return (
     <div className='flex flex-col justify-center gap-5 w-full '>
         <h3>{title}</h3>
         <p>{history}</p>
-        <p>{explanation}</p>
+        <p>{p1}</p>
+        <p>{p2}</p>
         <div className='flex flex-col items-center gap-5 mt-10'>
             <p>Ticket Price: <span className='underline text-blue-500 font-semi'>{price}</span></p>
             <div className='flex gap-5'>
