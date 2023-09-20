@@ -1,16 +1,21 @@
+'use client';
+import DestinationDetail from '@/components/Detail/Fragments/DestinationDetail';
+import DestinationTitle from '@/components/Detail/Fragments/DestinationTitle';
 import React from 'react'
+import {useMonasContext} from "@/context/MonasContext"
+import DestinationCarousel from '@/components/Detail/Fragments/DestinationCarousel';
+
 
 type Props = {}
 
 const page = (props: Props) => {
+  const {detail, carouselImage} = useMonasContext()
   return (
-    <div className='flex flex-col justify-center items-center max-h-screen w-full mt-40'>
-      <div>
-        <h2>Monas</h2>
-      </div>
-      <div className='flex flex-col md:flex-row'>
-        <div>Carousel</div>
-        <div>Detail and Button</div>
+    <div className='flex flex-col  w-full px-20'>
+      <DestinationTitle title='Monas' />
+      <div className='flex flex-col md:flex-row justify-center gap-20'>
+        <DestinationCarousel carouselImage={carouselImage}/>
+        <DestinationDetail detail={detail}/>
       </div>
     </div>
   )

@@ -19,7 +19,7 @@ const DestinationCard = ({destination}: any) => {
         </Link>
         <header className="px-4 mb-4 leading-tight">
           <h1 className="text-lg">
-            <Link className="font-semibold text-black no-underline hover:underline" href="/details">
+            <Link className="font-semibold text-black no-underline hover:underline" href={link}>
               {title}
             </Link>
           </h1>
