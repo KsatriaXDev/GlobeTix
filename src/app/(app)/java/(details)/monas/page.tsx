@@ -4,23 +4,14 @@ import DestinationTitle from "@/components/Detail/Fragments/DestinationTitle";
 import React from "react";
 import {useMonasContext} from "@/context/MonasContext";
 import DestinationCarousel from "@/components/Detail/Fragments/DestinationCarousel";
+import Link from "next/link";
 
 type Props = {};
 
 const page = (props: Props) => {
   const {detail, carouselImage} = useMonasContext();
   return (
-    <div className="flex flex-col  w-full px-20">
-      <DestinationTitle title="Monas" />
-      <div className="flex flex-col md:flex-row justify-center gap-20">
-        <DestinationCarousel carouselImage={carouselImage} />
-        <DestinationDetail detail={detail} link="/java/monas/booking" />
-      </div>
-    </div>
-  );
-};
-
-    <>
+   <>
     <figcaption>
       <figure>
         <h1>
@@ -57,11 +48,8 @@ const page = (props: Props) => {
     </figcaption>  
     </>
   
-  
-
-
-  )
-}
+  );
+};
 
 export default page
 
