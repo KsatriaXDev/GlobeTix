@@ -20,9 +20,6 @@ const page = (props: Props) => {
   );
 };
 
-<<<<<<< Updated upstream
-export default page;
-=======
     <>
     <figcaption>
       <figure>
@@ -76,4 +73,3 @@ export default page
     //     <DestinationDetail detail={detail}/>
     //   </div>
     // </div>
->>>>>>> Stashed changes
