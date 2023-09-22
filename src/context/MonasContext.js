@@ -1,7 +1,7 @@
 "use client";
 import {createContext, useContext} from "react";
 
-const MonasContext = createContext()
+const MonasContext = createContext();
 
 export default function MonasProvider({children}){
     const carouselImage = [
@@ -44,12 +44,9 @@ export default function MonasProvider({children}){
             "p2": "Tujuan pembangunan tugu monas adalah untuk mengenang dan mengabadikan kebesaran perjuangan Bangsa Indonesia yang dikenal dengan Revolusi 17 Agustus 1945, dan juga sebagai wahana untuk membangkitkan semangat patriotisme generasi sekarang dan akan datang. Monas mulai dibangun pada bulan Agustus 1959. Keseluruhan bangunan Monas dirancang oleh para arsitek Indonesia yaitu Soedarsono, Frederich Silaban dan Ir. Rooseno. Pada tanggal 17 Agustus 1961, Monas diresmikan oleh Presiden Soekarno. Dan mulai dibuka untuk umum sejak tanggal 12 Juli 1975.",
             "price": "$1500"
         }
-    const detail1 = {
-
-    }    
     return <MonasContext.Provider value={{carouselImage, detail}}>{children}</MonasContext.Provider>
 }
 
-export function useMonasContext(){
-    return useContext(MonasContext)
+export function useMonasContext() {
+  return useContext(MonasContext);
 }

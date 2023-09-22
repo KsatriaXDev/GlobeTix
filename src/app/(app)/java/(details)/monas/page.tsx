@@ -1,19 +1,17 @@
-'use client';
-import DestinationDetail from '@/components/Detail/Fragments/DestinationDetail';
-import DestinationTitle from '@/components/Detail/Fragments/DestinationTitle';
-import React from 'react'
-import {useMonasContext} from "@/context/MonasContext"
-import DestinationCarousel from '@/components/Detail/Fragments/DestinationCarousel';
-import Link from 'next/link';
+"use client";
+import DestinationDetail from "@/components/Detail/Fragments/DestinationDetail";
+import DestinationTitle from "@/components/Detail/Fragments/DestinationTitle";
+import React from "react";
+import {useMonasContext} from "@/context/MonasContext";
+import DestinationCarousel from "@/components/Detail/Fragments/DestinationCarousel";
+import Link from "next/link";
 
-
-type Props = {}
+type Props = {};
 
 const page = (props: Props) => {
-  const {detail, carouselImage} = useMonasContext()
+  const {detail, carouselImage} = useMonasContext();
   return (
-
-    <>
+   <>
     <figcaption>
       <figure>
         <h1>
@@ -37,7 +35,7 @@ const page = (props: Props) => {
               <span className="text-blue-800">Rp20.000,00</span>
             </div>
 
-            <Link href="/java/booking" className='add-cart'>
+            <Link href="/java/monas/booking" className='add-cart'>
                 Book Now
             </Link>
             <Link href="/java" className='add-cart'>
@@ -50,11 +48,8 @@ const page = (props: Props) => {
     </figcaption>  
     </>
   
-  
-
-
-  )
-}
+  );
+};
 
 export default page
 

@@ -57,7 +57,7 @@ const page = (props: Props) => {
           </button>
         </form>
         <h3 className="sub-heading text-black">
-          <Link href="/details"> back </Link>
+          <Link href="/java/monas"> back </Link>
         </h3>
       </section>
     </div>

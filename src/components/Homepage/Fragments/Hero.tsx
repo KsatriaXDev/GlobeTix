@@ -47,11 +47,10 @@ const Hero = (props: Props) => {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center gap-5 text-lg">
-          <p className="text-xl font-semibold py-14">Here is some of our customer experience:</p>
-          <FancyTestimonialsSlider testimonials={testimonials} />
+        <p className="text-xl font-semibold py-14">Here is some of our customer experience:</p>
+        <FancyTestimonialsSlider testimonials={testimonials} />
       </div>
     </>
-    
   );
 };
 

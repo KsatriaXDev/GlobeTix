@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react";
 
 type Props = {
-    title: string;
-}
+  title: string;
+};
 
 const DestinationTitle = ({title}: Props) => {
   return (
-    <div className='flex justify-center items-center h-20'>
-        <h2>{title}</h2>
+    <div className="flex justify-center items-center h-20">
+      <h2>{title}</h2>
     </div>
-  )
-}
+  );
+};
 
-export default DestinationTitle
+export default DestinationTitle;
