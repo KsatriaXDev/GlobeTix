@@ -1,7 +1,7 @@
 "use client";
 import DestinationDetail from "@/components/Monas/Fragments/DestinationDetail";
 import DestinationTitle from "@/components/Monas/Fragments/DestinationTitle";
-import React, { useContext } from "react";
+import React from "react";
 import DestinationCarousel from "@/components/Monas/Fragments/DestinationCarousel";
 
 
