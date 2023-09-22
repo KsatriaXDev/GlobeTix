@@ -1,13 +1,11 @@
 "use client";
-import React from "react";
+import React, { useContext } from "react";
 import Link from "next/link";
+import { MonasContext } from "@/context/MonasContext";
 
-type Props = {
-  detail: any;
-  link: string;
-};
 
-const DestinationDetail = ({detail, link}: Props) => {
+const DestinationDetail = () => {
+  const {detail} = useContext(MonasContext);
   const {title, history, p1, p2, price} = detail;
   return (
     <div className="flex flex-col justify-center gap-5 w-full ">
@@ -20,7 +18,7 @@ const DestinationDetail = ({detail, link}: Props) => {
           Ticket Price: <span className="underline text-blue-500 font-semi">{price}</span>
         </p>
         <div className="flex gap-5">
-          <Link href={link} className="bg-blue-500 text-white px-6 py-3 text-sm rounded-full">
+          <Link href="/java/monas/booking" className="bg-blue-500 text-white px-6 py-3 text-sm rounded-full">
             Book Now
           </Link>
           <Link href="/java" className="bg-blue-500 text-white px-6 py-3 text-sm rounded-full">

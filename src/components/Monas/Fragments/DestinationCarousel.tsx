@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import {Carousel} from "flowbite-react";
+import { MonasContext } from "@/context/MonasContext";
 
-const DestinationCarousel = ({carouselImage}: any) => {
+const DestinationCarousel = () => {
+  const {carouselImage} = useContext(MonasContext);
   return (
     <Carousel slideInterval={10000} className='classname="w-full h-[750px] bg-transparent'>
       {carouselImage.map((image: any) => (
