@@ -6,11 +6,8 @@ export default function DetailLayout({children}: {children: React.ReactNode}) {
     <div>
       <Header />
       <div className="pt-20 px-10 bg-[#f5f5f5] overflow-y-hidden">
-        <MonasProvider>
-          {children}
-        </MonasProvider>
+        <MonasProvider>{children}</MonasProvider>
       </div>
-      
     </div>
   );
 }
