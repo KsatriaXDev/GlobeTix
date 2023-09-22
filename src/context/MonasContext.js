@@ -1,7 +1,7 @@
 "use client";
-import {createContext, useContext} from "react";
+import {createContext} from "react";
 
-const MonasContext = createContext();
+export const MonasContext = createContext();
 
 export default function MonasProvider({children}){
     const carouselImage = [
@@ -45,8 +45,4 @@ export default function MonasProvider({children}){
             "price": "$1500"
         }
     return <MonasContext.Provider value={{carouselImage, detail}}>{children}</MonasContext.Provider>
-}
-
-export function useMonasContext() {
-  return useContext(MonasContext);
 }
