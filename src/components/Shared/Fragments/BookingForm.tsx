@@ -8,9 +8,10 @@ import axios from "axios";
 
 type Props = {
   tour: string;
+  link: string;
 };
 
-const BookingForm = ({tour}: Props) => {
+const BookingForm = ({tour, link}: Props) => {
   const [name, setName] = useState("");
   const [address, setAddress] = useState("");
   const [email, setEmail] = useState("");
@@ -73,9 +74,9 @@ const BookingForm = ({tour}: Props) => {
           type="submit"
           className="px-7 py-3 text-white text-sm bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full inline-flex items-center"
         >
-          <Link href="https://buy.stripe.com/test_5kAaF4fNGb168PC8ww">
+          <a href={link}>
             <span>Pay Now</span>
-          </Link>
+          </a>
         </button>
         <button className="px-7 py-3 text-white text-sm bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full inline-flex items-center">
           <Link href="/java/monas"> Go Back </Link>
