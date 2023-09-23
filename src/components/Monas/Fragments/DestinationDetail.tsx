@@ -1,19 +1,18 @@
 "use client";
-import React, { useContext } from "react";
+import React, {useContext} from "react";
 import Link from "next/link";
-import { MonasContext } from "@/context/MonasContext";
-
+import {MonasContext} from "@/context/MonasContext";
 
 const DestinationDetail = () => {
   const {detail} = useContext(MonasContext);
   const {title, history, p1, p2, price} = detail;
   return (
-    <div className="flex flex-col justify-center gap-5 w-full ">
+    <div className="flex flex-col justify-center gap-3 w-full text-justify ">
       <h3>{title}</h3>
       <p>{history}</p>
       <p>{p1}</p>
       <p>{p2}</p>
-      <div className="flex flex-col items-center gap-5 mt-10">
+      <div className="flex flex-col items-center gap-2 mt-10">
         <p>
           Ticket Price: <span className="underline text-blue-500 font-semi">{price}</span>
         </p>
