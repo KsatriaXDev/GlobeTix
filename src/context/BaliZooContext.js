@@ -7,41 +7,31 @@ export default function BaliZooProvider({children}){
     const carouselImage = [
         {
             "id" : 1,
-            "src": "https://freeimghost.net/images/2023/09/17/BaliZoo1.jpeg",
-            "alt": ""
+            "src": "https://freeimghost.net/images/2023/09/23/bali1.png",
+            "alt": "BaliZoo1"
         },
         {
             "id" : 2,
-            "src": "https://freeimghost.net/images/2023/09/19/BaliZoo2.png",
-            "alt": ""
+            "src": "https://freeimghost.net/images/2023/09/23/balizoo2.jpeg",
+            "alt": "BaliZoo2"
         },
         {
             "id" : 3,
-            "src": "https://freeimghost.net/images/2023/09/19/BaliZoo3.jpeg",
-            "alt": ""
+            "src": "https://freeimghost.net/images/2023/09/23/balizoo3.jpeg",
+            "alt": "BaliZoo3"
         },
         {
             "id" : 4,
-            "src": "https://freeimghost.net/images/2023/09/19/BaliZoo4.png",
-            "alt": ""
-        },
-        {
-            "id" : 5,
-            "src": "https://freeimghost.net/images/2023/09/19/BaliZoo5.png",
-            "alt": ""
-        },
-        {
-            "id" : 6,
-            "src": "https://freeimghost.net/images/2023/09/19/BaliZoo6.png",
-            "alt": ""
-        },
+            "src": "https://freeimghost.net/images/2023/09/23/balizoo4.jpeg",
+            "alt": "BaliZoo4"
+        }
     ]
     const detail = 
         {
-            "title": "BaliZoo (Monumen Nasional)",
+            "title": "Bali Zoo",
             "history": "Didirikan tahun 12 Juli 1975 oleh Soedarsono, Frederich Silaban dan Ir. Rooseno.",
-            "p1": "Menara ini terletak persis di Pusat Kota Jakarta. Tugu BaliZoo merupakan tugu kebanggaan bangsa Indonesia, selain itu BaliZoo juga menjadi salah satu pusat tempat wisata dan pusat pendidikan yang menarik bagi warga Indonesa baik yang di Jakarta maupun di luar Jakarta.",
-            "p2": "Tujuan pembangunan tugu BaliZoo adalah untuk mengenang dan mengabadikan kebesaran perjuangan Bangsa Indonesia yang dikenal dengan Revolusi 17 Agustus 1945, dan juga sebagai wahana untuk membangkitkan semangat patriotisme generasi sekarang dan akan datang. BaliZoo mulai dibangun pada bulan Agustus 1959. Keseluruhan bangunan BaliZoo dirancang oleh para arsitek Indonesia yaitu Soedarsono, Frederich Silaban dan Ir. Rooseno. Pada tanggal 17 Agustus 1961, BaliZoo diresmikan oleh Presiden Soekarno. Dan mulai dibuka untuk umum sejak tanggal 12 Juli 1975.",
+            "p1": "Bali Zoo merupakan kebun binatang pertama yang ada di pulau bali. Disini anda bisa melihat berbagai jenis binatang – binatang langka dari dalam negeri sampai binatang langka yang berasal dari luar negeri. Bali zoo park atau kebun binatang bali ini tepatnya beralamat di Desa Singapadu, Gianyar, Bali. Kurang lebih enam kilometer dari kota denpasar.",
+            "p2": "Bali zoo park memiliki luas kurang lebih 12 hektar. dan di huni oleh kurang lebih 100 jenis species binatang langka. Yang terbagi atas tiga katagori yaitu mamalia, reptil dan burung. Bali zoo park merupakan tempat wisata yang sangat tepat dan nyaman sekali wisata keluarga maupun rombongan. Di Bali zoo park anak – anak bisa mengenal secara langsung berbagai jenis binatang.",
             "price": "$1500"
         }
     return <BaliZooContext.Provider value={{carouselImage, detail}}>{children}</BaliZooContext.Provider>

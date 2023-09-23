@@ -3,7 +3,7 @@ import BaliZooProvider from "@/context/BaliZooContext";
 
 export default function DetailLayout({children}: {children: React.ReactNode}) {
   return (
-    <div>
+    <div className="pt-20 px-10 bg-[#f5f5f5] overflow-y-hidden">
       <Header />
       <BaliZooProvider>
           {children}

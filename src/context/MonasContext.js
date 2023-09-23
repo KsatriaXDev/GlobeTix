@@ -8,33 +8,23 @@ export default function MonasProvider({children}){
         {
             "id" : 1,
             "src": "https://freeimghost.net/images/2023/09/17/Monas1.jpeg",
-            "alt": ""
+            "alt": "Monas Pic 1"
         },
         {
             "id" : 2,
-            "src": "https://freeimghost.net/images/2023/09/19/Monas2.png",
-            "alt": ""
+            "src": "https://freeimghost.net/images/2023/09/23/monas2.jpeg",
+            "alt": "Monas Pic 2"
         },
         {
             "id" : 3,
             "src": "https://freeimghost.net/images/2023/09/19/Monas3.jpeg",
-            "alt": ""
+            "alt": "Monas Pic 3"
         },
         {
             "id" : 4,
-            "src": "https://freeimghost.net/images/2023/09/19/Monas4.png",
-            "alt": ""
-        },
-        {
-            "id" : 5,
-            "src": "https://freeimghost.net/images/2023/09/19/Monas5.png",
-            "alt": ""
-        },
-        {
-            "id" : 6,
-            "src": "https://freeimghost.net/images/2023/09/19/Monas6.png",
-            "alt": ""
-        },
+            "src": "https://freeimghost.net/images/2023/09/23/monas4.jpeg",
+            "alt": "Monas Pic 4"
+        }
     ]
     const detail = 
         {
