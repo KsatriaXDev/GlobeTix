@@ -8,7 +8,7 @@ const DestinationCarousel = () => {
   return (
     <Carousel slideInterval={10000} className="w-full min-h-screen bg-transparent flex-wrap justify-between">
       {carouselImage.map((image: any) => (
-        <Image className="object-cover" key={image.id} src={image.src} alt={image.alt} width={600} height={600} fill={true}/>
+        <Image className="object-cover" key={image.id} src={image.src} alt={image.alt} width={600} height={600}/>
       ))}
     </Carousel>
   );

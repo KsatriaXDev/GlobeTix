@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 type Props = {
   title: string;
@@ -14,7 +15,7 @@ const DestinationCard = ({destination}: any) => {
       <div className="overflow-hidden border border-gray-200 rounded-xl">
         <Link href={link}>
           <div className="m-4 overflow-hidden rounded-xl">
-            <img alt={title} className="block h-[400px] w-[400px]" src={thumbnail} />
+            <Image alt={title} className="block h-[400px] w-[400px]" src={thumbnail} width={400} height={600}/>
           </div>
         </Link>
         <header className="px-4 mb-4 leading-tight">

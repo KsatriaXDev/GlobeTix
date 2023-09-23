@@ -7,7 +7,7 @@ type Props = {};
 const page = (props: Props) => {
   return (
     <div>
-      <BookingForm tour="Bali Zoo-Denpasar Tour" />
+      <BookingForm tour="Bali Zoo-Denpasar Tour" link="https://buy.stripe.com/test_6oEcNcatm8SYe9W4gh" />
     </div>
   );
 };
