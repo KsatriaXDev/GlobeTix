@@ -75,9 +75,9 @@ const BookingForm = ({tour, link}: Props) => {
           type="submit"
           className="px-7 py-3 text-white text-sm bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full inline-flex items-center"
         >
-          <a href={link}>
+          <Link href="https://buy.stripe.com/test_6oEcNcatm8SYe9W4gh">
             <span>Pay Now</span>
-          </a>
+          </Link>
         </button>
         <button className="px-7 py-3 text-white text-sm bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full inline-flex items-center">
           <Link href="/bali/bali-zoo"> Go Back </Link>
