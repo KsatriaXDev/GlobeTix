@@ -8,21 +8,15 @@ export default function OrderProvider ({children}){
     const orderList = [
         {
             id: 1,
-            order: "Lalalal",
-            price: "lalala",
-            date: "lala"
+            order: "Monas-Jakarta Tour",
+            price: "$1500",
+            date: "12-12-23"
         },
         {
             id: 2,
-            order: "lululu",
-            price: "ulul",
-            date: "lulul"
-        },
-        {
-            id: 3,
-            order: "aalal",
-            price: "alal",
-            date: "aakak"
+            order: "Bali Zoo-Bali Tour",
+            price: "$1500",
+            date: "12-12-23"
         }
     ]
     return <OrderContext.Provider value={{orderList}}>{children}</OrderContext.Provider>

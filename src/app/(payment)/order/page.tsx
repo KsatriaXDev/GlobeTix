@@ -7,7 +7,7 @@ import Link from "next/link";
 
 type Props = {};
 
-const page = (props: Props) => {
+const Page = (props: Props) => {
   const {orderList}= useContext(OrderContext)
   return (
     <div className="flex flex-col gap-5 mt-40 px-20 h-screen">
@@ -48,4 +48,4 @@ const page = (props: Props) => {
   );
 };
 
-export default page;
+export default Page;
