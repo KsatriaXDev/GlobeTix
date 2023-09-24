@@ -36,40 +36,41 @@ const BookingForm = ({tour, link}: Props) => {
   };
 
   return (
-    <form onSubmit={handleForm}>
+    <form onSubmit={handleForm} className="flex flex-col justify-center items-center gap-8 h-screen">
+      <h3 className="text-xl font-semibold py-5">Book Your Dream Tour Now!</h3>
       {/* Name */}
-      <div>
+      <div className="flex flex-col gap-2 w-80">
         <label htmlFor="name">Fullname</label>
-        <input type="text" placeholder="Fullname" value={name} onChange={(e) => setName(e.target.value)} />
+        <input className="rounded-md" type="text" placeholder="Fullname" value={name} onChange={(e) => setName(e.target.value)} />
       </div>
       {/* Address */}
-      <div>
+      <div className="flex flex-col gap-2 w-80">
         <label htmlFor="address">Address</label>
-        <input type="text" placeholder="Address" value={address} onChange={(e) => setAddress(e.target.value)} />
+        <input className="rounded-md" type="text" placeholder="Address" value={address} onChange={(e) => setAddress(e.target.value)} />
       </div>
       {/* Email */}
-      <div>
+      <div className="flex flex-col gap-2 w-80">
         <label htmlFor="email">Email</label>
-        <input type="email" placeholder="example@gmail.com" value={email} onChange={(e) => setEmail(e.target.value)} />
+        <input className="rounded-md" type="email" placeholder="example@gmail.com" value={email} onChange={(e) => setEmail(e.target.value)} />
       </div>
       {/* Phone Number */}
-      <div>
+      <div className="flex flex-col gap-2 w-80">
         <label htmlFor="phone">Phone Number</label>
         <PhoneInput country={"us"} value={phone} onChange={(value) => setPhone(value)} />
       </div>
       {/* Date */}
-      <div>
+      <div className="flex flex-col gap-2 w-80">
         <label htmlFor="date">Departure Date</label>
-        <input type="date" value={date} onChange={(e) => setDate(e.target.value)} />
+        <input className="rounded-md" type="date" value={date} onChange={(e) => setDate(e.target.value)} />
       </div>
       {/* Selection */}
-      <div>
+      <div className="flex flex-col gap-2 ">
         <label htmlFor="select">Tour Destination</label>
-        <select value={destination} onChange={(e) => setDestination(e.target.value)}>
+        <select className="w-80" value={destination} onChange={(e) => setDestination(e.target.value)}>
           <option value={tour}>{tour}</option>
         </select>
       </div>
-      <div>
+      <div className="flex gap-10 py-5">
         <button
           type="submit"
           className="px-7 py-3 text-white text-sm bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full inline-flex items-center"
@@ -79,7 +80,7 @@ const BookingForm = ({tour, link}: Props) => {
           </a>
         </button>
         <button className="px-7 py-3 text-white text-sm bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full inline-flex items-center">
-          <Link href="/java/monas"> Go Back </Link>
+          <Link href="/bali/bali-zoo"> Go Back </Link>
         </button>
       </div>
     </form>

@@ -10,7 +10,6 @@ const DestinationDetail = () => {
   const {title, history, p1, p2, price} = detail;
   return (
     <div className="flex flex-col justify-center gap-5 w-full ">
-      <h3>{title}</h3>
       <p>{history}</p>
       <p>{p1}</p>
       <p>{p2}</p>
