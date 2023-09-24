@@ -8,6 +8,12 @@ const nextConfig = {
             port: '',
             pathname: '/images/**',
           },
+          {
+            protocol: 'https',
+            hostname: 'tecdn.b-cdn.net',
+            port: '',
+            pathname: '/img/**',
+          },
         ],
       },
 };
