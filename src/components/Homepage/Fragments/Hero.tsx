@@ -5,34 +5,32 @@ import HomeText from "../Elements/HomeText";
 import Image from "next/image";
 import {HomeImg} from "../../../../public";
 import FancyTestimonialsSlider from "../Elements/Testimonial";
-import img1 from "../../../../public/images/Borobudur1.jpg";
-import img2 from "../../../../public/images/Borobudur2.jpeg";
-import img3 from "../../../../public/images/Borobudur3.jpg";
+
 
 type Props = {};
 
 const Hero = (props: Props) => {
   const testimonials = [
     {
-      img: img1,
+      img: "https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg",
       quote:
-        "The ability to capture responses is a game-changer. If a user gets tired of the sign up and leaves, that data is still persisted. Additionally, it's great to select between formats.",
-      name: "Jessie J",
-      role: "Acme LTD",
+        "Booking my holiday tickets through GlobeTix was an absolute breeze! The user-friendly interface made it easy to find the best deals, and their customer support team was incredibly helpful when I had a few questions. I'll definitely be using this site for all my future travel plans.",
+      name: "Kevin Pratama",
+      role: "Customer",
     },
     {
-      img: img2,
+      img: "https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg",
       quote:
-        "Having the power to capture user feedback is revolutionary. Even if a participant abandons the sign-up process midway, their valuable input remains intact.",
-      name: "Nick V",
-      role: "Malika Inc.",
+        "I've been using GlobeTix for years now, and it never disappoints. The wide range of destinations and airlines to choose from ensures that I always find the perfect holiday deal. Plus, the regular promotions and discounts are a bonus!",
+      name: "Jesslyn Prawira",
+      role: "Customer",
     },
     {
-      img: img3,
+      img: "https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg",
       quote:
-        "The functionality to capture responses is a true game-changer. Even if a user becomes fatigued during sign-up and abandons the process, their information remains stored.",
-      name: "Amelia W",
-      role: "Panda AI",
+        "Thanks to GlobeTix, my family and I had the most amazing holiday ever. The prices were unbeatable, and the booking process was a breeze. We had no worries, just pure enjoyment from start to finish.",
+      name: "Kristine Wibowo",
+      role: "Customer",
     },
   ];
   return (
@@ -54,4 +52,4 @@ const Hero = (props: Props) => {
   );
 };
 
-export default Hero;
+export default Hero;
